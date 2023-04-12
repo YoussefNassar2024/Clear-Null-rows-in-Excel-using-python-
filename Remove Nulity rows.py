@@ -2,7 +2,7 @@
 import pandas as pd
 
 # Prompt user for file path
-file_path = 'E:\\steps to add Quran Sound\\Hadith.xlsx'
+file_path = 'E:\\YourFile.xlsx'
 
 # Load Excel file
 df = pd.read_excel(file_path)
@@ -11,8 +11,7 @@ df = pd.read_excel(file_path)
 df.dropna(how='all', inplace=True)
 
 # Prompt user for output file path
-output_path = "E:\\steps to add Quran Sound\\cleaned_file.xlsx"
-
+output_path = "E:\\cleaned_file.xlsx" # do not forget to add the output file name in this case the output file name is cleaned_file.xlsx
 # Save cleaned Excel file
 df.to_excel(output_path, index=False)
 
